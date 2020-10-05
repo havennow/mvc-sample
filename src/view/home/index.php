@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>CrossKnowledge - Code challenge</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
-    <link rel="stylesheet" href="http://localhost/assets/css/site.css">
+    <link rel="stylesheet" href="http://<?= $host?>/assets/css/site.css">
 </head>
 <body>
 <article>

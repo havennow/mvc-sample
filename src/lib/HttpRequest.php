@@ -46,7 +46,13 @@ class HttpRequest
     private $config;
 
     /**
+     * @var
+     */
+    private $host;
+
+    /**
      * HttpRequest constructor.
+     * @throws \Exception
      */
     public function __construct()
     {
@@ -94,6 +100,15 @@ class HttpRequest
 
         $this->request = $_REQUEST;
         $this->params = $_SERVER['QUERY_STRING'];
+        $this->host = $_SERVER['HTTP_HOST'];
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getHost()
+    {
+        return $this->host;
     }
 
     /**
