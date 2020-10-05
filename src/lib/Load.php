@@ -2,14 +2,24 @@
 
 namespace App\Lib;
 
+/**
+ * Class Load
+ * @package App\Lib
+ */
 class Load
 {
+    /**
+     * @var HttpRequest
+     */
     public $httpRequest;
+    /**
+     * @var Redis
+     */
     public $redis;
 
     /**
      * Load constructor.
-     * @throws Exception
+     * @throws \Exception
      */
     public function __construct()
     {

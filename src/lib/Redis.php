@@ -2,9 +2,19 @@
 
 namespace App\Lib;
 
+/**
+ * Class Redis
+ * @package App\Lib
+ */
 class Redis
 {
+    /**
+     * @var
+     */
     private static $instance;
+    /**
+     * @var \Redis
+     */
     private $connection;
 
     /**
@@ -44,6 +54,9 @@ class Redis
         return self::$instance;
     }
 
+    /**
+     * @return \Redis
+     */
     public function getConnection()
     {
         return $this->connection;

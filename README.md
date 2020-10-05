@@ -7,6 +7,7 @@ Mini Framework mvc sample
 - `make install` - Instala dependências
 - `make start` - Inicia o projeto
 
+- Configuração do projeto ( mariadb, redis ) em `config/config.php`
 
 # Cache de página já processada implementada na controller
 

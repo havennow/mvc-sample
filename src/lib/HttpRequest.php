@@ -2,16 +2,47 @@
 
 namespace App\Lib;
 
+/**
+ * Class HttpRequest
+ * @package App\Lib
+ */
 class HttpRequest
 {
+    /**
+     * @var
+     */
     private $uri;
+    /**
+     * @var
+     */
     private $method;
+    /**
+     * @var
+     */
     private $request;
+    /**
+     * @var
+     */
     private $path;
+    /**
+     * @var
+     */
     private $function;
+    /**
+     * @var array
+     */
     private $params = [];
+    /**
+     * @var string
+     */
     public $defaultRoute = 'index';
+    /**
+     * @var string
+     */
     public $defaultController = 'home';
+    /**
+     * @var
+     */
     private $config;
 
     /**
@@ -42,6 +73,9 @@ class HttpRequest
         }
     }
 
+    /**
+     *
+     */
     private function init()
     {
         $this->config = require __DIR__.'/../config/config.php';
@@ -94,6 +128,10 @@ class HttpRequest
         ], $this->params);
     }
 
+    /**
+     * @param $params
+     * @return array
+     */
     private function extractParams($params)
     {
         $result = [];
@@ -111,11 +149,19 @@ class HttpRequest
         return $result;
     }
 
+    /**
+     *
+     */
     private function executePost()
     {
         //@TODO
     }
 
+    /**
+     * @param string $pattern
+     * @param $in
+     * @param $out
+     */
     private function clearVariable(string $pattern, $in, &$out)
     {
         preg_match($pattern, $in, $out);
