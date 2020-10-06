@@ -1,0 +1,17 @@
+{
+    "name": "havennow/mvc-sample",
+    "description": "Mini framework MVC PHP",
+    "type": "framework",
+    "license": "BSD-2",
+    "authors": [
+        {
+            "name": "Guilherme Trevisan",
+            "email": "havennow@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "./"
+        }
+    }
+}

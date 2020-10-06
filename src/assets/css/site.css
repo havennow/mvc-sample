@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+}
+
+article {
+    width: 324px;
+    background: #f7f7f7;
+}
+
+article > header  {
+    padding:15px;
+    width: 309px;
+    display: inline-block;
+}
+
+article > .review > a {
+    position: absolute;
+    margin-top: 417px;
+    left: 42px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #f7f7f7;
+    opacity: 0.5;
+    border: solid #ffffff 3px;
+    padding: 8px;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    width: 200px;
+    text-decoration:none;
+    color: #000;
+}
+
+article > header .header-badge > img {
+    width: 25px;
+    height: 25px;
+}
+
+article > header .header-badge {
+    float: right;
+    display: flex;
+}
+
+article > header > .header-master {
+    display: inline-block;
+}
+
+article > header > .header-master .header-master__title{
+    font-weight: bold;
+}
+
+article > header > .header-master .js-date-format{
+    display: inline-block;
+}
+
+footer > p {
+    display: flex;
+    padding: 15px;
+}
