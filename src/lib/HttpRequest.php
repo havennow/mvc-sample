@@ -75,7 +75,7 @@ class HttpRequest
                     break;
             }
         }catch(\Exception $e){
-            echo View::Render(['error' => $e], 'error/index');
+            echo View::Render('error/index', ['error' => $e]);
         }
     }
 
@@ -116,11 +116,12 @@ class HttpRequest
      */
     private function executeGet()
     {
-        $this->init();
         $namespace = '\\App\\Controller\\';
+
         if (empty($this->path)) {
             $this->path = ucfirst($this->config['default_controller'] ?? $this->defaultController);
         }
+
         $this->path .= 'Controller';
         $class = $namespace.$this->path;
 

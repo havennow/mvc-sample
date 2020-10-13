@@ -19,6 +19,7 @@ class View
     public static function Render($file, $data = [])
     {
         $path = realpath(__DIR__.'/../view/');
+
         $file = $path.'/'.$file.'.php';
 
         if (!file_exists($file)) {
