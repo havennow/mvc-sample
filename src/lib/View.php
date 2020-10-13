@@ -3,18 +3,20 @@
 namespace App\Lib;
 
 /**
- * Class Lib
+ * Class View
  * @package App\Lib
  */
 class View
 {
     /**
-     * @param $data
+     * Render data in view
+     *
      * @param $file
+     * @param $data
      * @return null|string
      * @throws \Exception
      */
-    public static function Render($data, $file)
+    public static function Render($file, $data = [])
     {
         $path = realpath(__DIR__.'/../view/');
         $file = $path.'/'.$file.'.php';

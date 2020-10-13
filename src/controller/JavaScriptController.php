@@ -2,21 +2,22 @@
 
 namespace App\Controller;
 
-use App\Lib\HttpRequest;
 use App\Lib\View;
 
 /**
+ * Controller Javascript
+ *
  * Class JavaScriptController
  * @package App\Controller
  */
 class JavaScriptController
 {
     /**
-     * @param HttpRequest $request
+     * Action of controller "index"
      * @throws \Exception
      */
-    public function index(HttpRequest $request)
+    public function index()
     {
-        echo  View::Render([], 'javaScript/index');
+        echo  View::Render('javaScript/index');
     }
 }

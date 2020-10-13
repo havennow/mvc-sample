@@ -12,6 +12,7 @@ class Load
      * @var HttpRequest
      */
     public $httpRequest;
+
     /**
      * @var Redis
      */
